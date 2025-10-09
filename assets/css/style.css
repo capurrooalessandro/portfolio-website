@@ -235,8 +235,7 @@ header {
     }
 }
 
-/* home wrapper */
-.home, .about, .edu, .skills {
+.home, .about, .edu, .skills, .exp, .exp-intro {
     background: var(--bg-body);
     color: var(--text-paragraph);
     padding-block: clamp(48px, 6vw, 72px);
@@ -253,22 +252,26 @@ header {
     padding: clamp(48px, 0.4vw, 72px) 36px;
 }
 
-.edu-cards {
+.exp-intro {
+    padding-block: 0;
+    min-height: 90vh;
+}
+
+.edu-cards, .exp-cards {
     display: flex;
     justify-content: center;
     flex-flow: column;
     margin: auto;
 }
 
-.about-inner, .skills-inner {
+.about-inner, .skills-inner, .exp-inner {
     display: flex;
     justify-content: center;
     flex-flow: column;
     margin: 0 auto;
 }
 
-/* FLEX layout */
-.home-inner, .about-section, .edu-card-inner, .skills-section {
+.home-inner, .about-section, .edu-card-inner, .exp-card-inner, .skills-section, .exp-section, .exp-intro-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,24 +279,48 @@ header {
     gap: clamp(24px, 5vw, 56px);
 }
 
-.edu-card-inner {
+.edu-card-inner, .exp-card-inner {
     background: var(--bg-card);
     padding: 48px 48px;
     border-radius: 1rem;
     margin-block: 4vh;
 }
 
-.about-section, .skills-section {
+.exp-card-inner {
+    text-align: center;
+}
+
+.about-section, .skills-section, .exp-section {
     margin-block: 8vh;  
 }
 
+.exp-intro-section {
+    margin-block: 4vh;
+}
 
 @media (max-width: 64rem) {
     .edu {
         padding: clamp(28px, 0.2vw, 72px) 24px;
     }
+
     .edu-card-inner {
         padding: 36px 24px;
+    }
+
+    .exp-card-inner {
+        padding: 24px 16px;
+    }
+
+    .exp-inner {
+        text-align: center;
+    }
+
+    .exp-intro-section {
+        margin-block: 3vh;
+    }
+
+    .exp-content {
+        max-width: 90ch;
     }
 
     .reverse {
@@ -301,11 +328,37 @@ header {
     }
 }
 
-/* Switch to row on wider screens */
+@media (max-width: 56rem) {
+    .edu {
+        padding: 0;
+    }
+
+    .exp-content {
+        max-width: 100%;
+    }
+
+    .edu-card-inner {
+        padding: 36px 24px;
+        border-radius: 0;
+        margin-block: 0;
+    }
+
+    .exp-card-inner {
+        padding: 28px 16px 0 16px;
+        border-radius: 0;
+        margin-block: 0;
+    }
+
+}
+
 @media (min-width: 64rem) {
-    .home-inner, .about-section, .edu-card-inner, .skills-section {
+    .home-inner, .about-section, .edu-card-inner, .skills-section, .exp-section, .exp-intro-section {
         flex-direction: row;
         align-items: center;
+    }
+
+    .exp-card-inner {
+        flex-direction: column;
     }
 
     .about-section, .skills-section{
@@ -317,8 +370,11 @@ header {
     background: var(--bg-card);
 }
 
-/* Media (portrait) */
-.home-media, .about-media, .edu-media, .skills-media {
+.alt-bg-card {
+    background: var(--bg-body);
+}
+
+.home-media, .about-media, .edu-media, .skills-media, .exp-media, .exp-card-media {
     margin: 0;
     display: flex;
     align-items: center;
@@ -326,13 +382,17 @@ header {
     flex: 0 0 auto;
 }
 
+.exp-media, .exp-card-media {
+    margin-block: clamp(40px, 2vw, 54px);
+}
+
 @media (max-width: 48rem) {
-    .home-media, .about-media, .edu-media, .skills-media {
+    .home-media, .about-media, .edu-media, .skills-media, .exp-media, .exp-card-media {
         margin-bottom: 14px;
     }
 }
 
-.home-media img, .about-media img, .edu-media img, .skills-media img {
+.home-media img, .about-media img, .edu-media img, .skills-media img, .exp-card-media img, .exp-media img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,8 +404,20 @@ header {
     outline-offset: 2px;
 }
 
-.about-media img, .edu-media img, .skills-media img {
+.about-media img, .edu-media img, .skills-media img, .exp-card-media img, .exp-media img {
     border-radius: 5%;
+}
+
+.exp-media img {
+    width: min(86vw, 440px);
+    border-radius: 0.7rem;
+    height: auto;
+}
+
+.exp-card-media img {
+    width: min(86vw, 640px);
+    border-radius: 0.7rem;
+    height: auto;
 }
 
 @media (min-width: 48rem) {
@@ -366,8 +438,8 @@ header {
         height: min(86vw, 410px);
     }
     .skills-first-media img {
-        height: min(86vw, 380px);
-        width: min(86vw, 410px);
+        height: min(86vw, 300px);
+        width: min(86vw, 450px);
     }
     .skills-second-media img {
         height: min(86vw, 508px);
@@ -422,8 +494,8 @@ header {
         height: min(86vw, 500px);
     }
     .skills-first-media img {
-        height: min(86vw, 490px);
-        width: min(86vw, 520px);
+        width: min(86vw, 550px);
+        height: min(86vw, 400px);
     }
     .skills-second-media img {
         height: min(86vw, 568px);
@@ -478,8 +550,8 @@ header {
         height: min(86vw, 540px);
     }
     .skills-first-media img {
-        height: min(86vw, 560px);
-        width: min(86vw, 580px);
+        width: min(86vw, 600px);
+        height: min(86vw, 450px);
     }
     .skills-second-media img {
         height: min(86vw, 628px);
@@ -509,8 +581,8 @@ header {
         height: min(86vw, 300px);
     }
     .skills-first-media img {
-        height: min(86vw, 380px);
-        width: min(86vw, 410px);
+        height: min(66vw, 260px);
+        width: auto;
     }
     .skills-second-media img {
         height: min(86vw, 508px);
@@ -540,7 +612,7 @@ header {
         height: min(72vw, 260px);
     }
     .skills-first-media img {
-        height: min(66vw, 230px);
+        height: min(48vw, 230px);
         width: auto;
     }
     .skills-second-media img {
@@ -557,8 +629,7 @@ header {
     }
 }
 
-/* Typography */
-.home-title, .about-title, .edu-title, .skills-title{
+.home-title, .about-title, .edu-title, .skills-title, .exp-title{
     margin: 0 0 4px;
     color: var(--text-header);
     font-weight: 700;
@@ -566,9 +637,15 @@ header {
     font-size: clamp(30px, 2.2vw + 0.8rem, 84px);
 }
 
-.about-title, .edu-title, .skills-title {
+.about-title, .edu-title, .skills-title, .exp-title {
     margin: 0 0 26px;
     font-size: clamp(30px, 2.2vw + 0.75rem, 84px);
+}
+
+h2.exp-title{
+    margin: 0 0 46px;
+    text-align: center;
+    max-width: 40ch;
 }
 
 .home-subtitle {
@@ -580,7 +657,7 @@ header {
 }
 
 
-.home-text p, .home-text h3, .about-text p, .skills-text p, .edu-text p, .text-link {
+.home-text p, .home-text h3, .about-text p, .skills-text p, .edu-text p, .exp-text p, .text-link {
     margin: 0 0 12px;
     color: var(--text-paragraph);
     font-size: clamp(19px, 0.5vw + 1rem, 78px);
@@ -591,7 +668,11 @@ header {
     align-items: center;
 }
 
-.about-text p, .edu-text p, .skills-text p, .text-link {
+.exp-text p {
+    max-width: 80ch;
+}
+
+.about-text p, .edu-text p, .skills-text p, .exp-text p, .text-link {
     font-size: clamp(19px, 0.5vw + 0.85rem, 78px);
 }
 
@@ -604,7 +685,6 @@ header {
     font-size: clamp(22px, 0.5vw + 1.2rem, 70px);
 }
 
-/* Base button (already present, keep as-is) */
 .btn {
     display: inline-block;
     padding: 10px 36px;
@@ -627,7 +707,6 @@ header {
     border-radius: 0.4rem;
 }
 
-/* Outline CTA variant (you already have this) */
 .btn--outline {
     color: var(--btn-bd-color);
     border: 2px solid var(--btn-bd-border-color);
@@ -651,7 +730,6 @@ header {
     border-color: var(--btn-bd-active-border-color);
 }
 
-/* New: icon button variant for socials */
 .btn--icon {
     width: 54px;
     height: 54px;
@@ -697,7 +775,6 @@ header {
     border-color: var(--btn-bd-active-border-color);
 }
 
-/* Social container stays flex */
 .social {
     margin-block: 14px 18px;
 }
@@ -782,7 +859,6 @@ header {
     }
 }
 
-/* Accent helpers */
 .accent-teal {
     color: var(--text-teal);
 }
