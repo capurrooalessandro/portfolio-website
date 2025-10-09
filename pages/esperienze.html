@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="../assets/vendor/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Capurro Alessandro | Front-end Developer Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <picture class="header-logo">
+                <a href="../index.html" aria-hidden="true">
+                    <img src="../favicon.ico" alt="Portfolio online">
+                </a>
+            </picture>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"
+                aria-controls="primary-navigation">
+            <label for="nav-toggle" class="burger">
+                <span class="sr-only">Menu</span>
+                <i class="fa-solid fa-bars icon icon--open" aria-hidden="true"></i>
+                <i class="fa-solid fa-xmark icon icon--close" aria-hidden="true"></i>
+            </label>
+
+            <nav class="navbar" id="primary-navigation" aria-label="Primary">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Educazione.html">Educazione</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./competenze.html">Competenze</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./esperienze.html" aria-current="page">Esperienze</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="exp-intro" aria-labelledby="exp-title">
+            <div class="exp-inner">
+                <div class="container exp-intro-section">
+                    <picture class="exp-media exp-first-media">
+                        <img src="../assets/images/experience-image.jpg" alt="Esperienze" loading="eager"
+                            decoding="async">
+                    </picture>
+
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h1 class="exp-title">
+                                Le mie <span class="accent-purple">esperienze lavorative</span>
+                                (sia <span class="accent-teal">scolastiche</span> che non):
+                            </h1>
+                        </div>
+                        <article class="exp-text">
+                            <p>
+                                In questa sezione puoi trovare le mie esperienze lavorative maturate negli 
+                                anni, che mi hanno permesso di crescere professionalmente e acquisire competenze 
+                                pratiche nello sviluppo di pagine web dinamiche e nella creazione di applicazioni 
+                                integrate all'interno di esse.
+                            </p>
+                            <p>
+                                Ogni esperienza ha contribuito ad arricchire le mie capacità tecniche e a consolidare 
+                                il mio approccio alla programmazione moderna, orientato sia all'efficienza che alla 
+                                qualità del prodotto finale.
+                            </p>
+                            <p>
+                                Per molti dei progetti web che trovi elencati, è disponibile nella descrizione il link 
+                                diretto alla relativa pagina GitHub, dove puoi visualizzare il codice sorgente e 
+                                approfondire il lavoro svolto.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exp alt-bg-section" aria-labelledby="exp-title" id="mayerfeld-course">
+            <div class="exp-cards">
+                <div class="exp-header">
+                    <h2 class="exp-title">
+                        Mayerfeld Consulting Front-end Developer Practicum Program - 
+                        (<span class="accent-teal">Settembre 2025/Ottobre 2025</span>):
+                    </h2>
+                </div>
+                <section class="container exp-card-inner alt-bg-card">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Calcolatrice JavaScript:
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/calcolatrice-javascript-mayerfeld.png" alt="Calcolatrice JavaScript" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                Lo scopo di questa esercitazione era quello di creare una Calcolatrice in JavaScript 
+                                (<a href="https://capurrooalessandro.github.io/js-assignment/" 
+                                    class="text-link">è possibile provarla cliccando quì</a>)
+                                con le seguenti caratteristiche:
+                            </p>
+                            <p>
+                                Implementare le funzioni di base di una calcolatrice: somma, sottrazione, moltiplicazione 
+                                e divisione. Una volta fatto ciò creare una funzione generale che, dato un operatore e due numeri, 
+                                richiama la funzione corrispondente e restituisce il risultato.
+                            </p>
+                            <p>
+                                Interfaccia: una calcolatrice HTML essenziale con i pulsanti numerici, i tasti per le quattro operazioni, 
+                                il tasto “=” e un display ben visibile. Aggiungere successivamente anche un pulsante “AC” per azzerare 
+                                rapidamente tutto.
+                            </p>
+                            <p>
+                                Gestire la logica di input in modo che la pressione dei tasti numerici aggiorni il display e mantenga in 
+                                memoria il “valore visualizzato” per usarlo nei calcoli successivi. Quando l’utente sceglie un’operazione, 
+                                salvare il primo numero e l’operatore selezionato; alla pressione di “=”, eseguire il calcolo con la funzione 
+                                generale.
+                            </p>
+                            <p>
+                                Fare in modo che si possano concatenare più operazioni una dopo l’altra ottenendo risultati corretti, valutando 
+                                ogni coppia di numeri man mano. Consentire l’inserimento dei decimali, aggiungere un tasto “backspace” per 
+                                correggere l’ultima cifra inserita e, infine, integrare il supporto da tastiera per un’esperienza d’uso più 
+                                rapida e naturale.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS3, JavaScript.
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/js-assignment" class="text-link">
+                                    Calcolatrice JavaScript
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="container exp-card-inner alt-bg-card">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Webpage responsive in HTML5 e CSS3:
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/css3-responsive-template.png" alt="Webpage responsive in HTML5 e CSS3" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                In questa esercitazione lo scopo era quello di creare un sito web (<a href="https://capurrooalessandro.github.io/css-template-assignment/" 
+                                    class="text-link">visitabile cliccando quì</a>) dalle 3-5 pagine utilizzando elementi 
+                                semantici di HTML5 e un layout responsive in CSS con Flexbox. Un altro obiettivo importante era collaborare 
+                                sul codice, risolvendo i problemi derivanti dalle diverse modifiche e supportandoci a vicenda nella gestione 
+                                del carico di lavoro.
+                            </p>
+                            <p>
+                                Il sito necessitava anche di un tema: abbiamo scelto di progettarlo attorno a un’azienda fittizia il cui scopo è 
+                                risolvere le difficoltà della collaborazione tra persone in fusi orari diversi, eliminando così le limitazioni 
+                                geografiche.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS3.
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/css-template-assignment" class="text-link">
+                                    Webpage responsive
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="container exp-card-inner alt-bg-card">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Struttura HTML5 con elementi semantici:
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/html5-semantico.png" alt="Struttura HTML5 semantica" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                L'obiettivo di questa esercitazione era quello di creare un sito web
+                                (<a href="https://capurrooalessandro.github.io/website-assignment/" 
+                                    class="text-link">visitabile cliccando quì</a>) 
+                                sul tuo hobby preferito concentrandosi sul creare la struttura in HTML5 attraverso 
+                                l'utilizzo di elementi semantici.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5.
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/website-assignment" class="text-link">
+                                    Struttura HTML5
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="exp" aria-labelledby="exp-title">
+            <div class="exp-cards">
+                <div class="exp-header">
+                    <h2 class="exp-title">
+                        Indipendente - 
+                        (<span class="accent-teal">2024/Attuale</span>):
+                    </h2>
+                </div>
+                <section class="container exp-card-inner">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                               Il mio Portfolio - (2025):
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/portfolio.jpg" alt="Il mio portfolio" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                Anche il mio portfolio online (il sito che stai visitando in questo momento) è stato interamente 
+                                progettato e realizzato da zero da me. Ho scelto di seguire questo approccio non solo come esercizio 
+                                pratico, ma anche per avere la libertà di creare uno spazio che rispecchiasse pienamente il mio stile 
+                                e la mia personalità, rendendolo unico e autentico.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS, JavaScript.
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/portfolio-website" class="text-link">
+                                    Portfolio
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="container exp-card-inner">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                <span class="accent-purple">Neoflow</span> - (2024/TBA):
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/neoflow-logo.jpg" alt="Logo di Neoflow" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                Neoflow è un servizio dedicato alla gestione di B&B e affittacamere, pensato per automatizzare 
+                                i processi di check-in e check-out, rendendoli semplici, immediati e completamente digitali.
+                            </p>
+                            <p>
+                                Con Neoflow, gli ospiti possono registrarsi online prima dell'arrivo, caricando il proprio documento 
+                                o inserendo i dati richiesti. Il sistema è progettato per essere veloce, intuitivo e pienamente conforme 
+                                alle normative vigenti.
+                            </p>
+                            <p>
+                                Grazie a questo progetto, ho avuto l'opportunità di approfondire e consolidare le mie competenze nello 
+                                sviluppo front-end e back-end, lavorando con tecnologie come React (con Vite), Greensock GSAP, Node.js, 
+                                Java Spring Boot 3 e MySQL. Al momento il servizio è ancora WIP, ma verrà presentato a breve una volta 
+                                ultimate le funzioni principali.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS, JavaScript, JQuery, Bootstrap 5.3, Greensock GSAP, React(con Vite), 
+                                Node.js, Java Spring Boot 3, MySQL.
+                            </p>
+                            <p>
+                                Repository GitHub: (non disponibile)
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <section class="exp alt-bg-section" aria-labelledby="exp-title" id="maturita-2022">
+            <div class="exp-cards">
+                <div class="exp-header">
+                    <h2 class="exp-title">
+                        Istituto Tecnico Gastaldi-Abba - (<span class="accent-teal">2021/2022</span>):
+                    </h2>
+                </div>
+                <section class="container exp-card-inner alt-bg-card">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Sito web sui sintetizzatori - (Maturità 2022):
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/sito-web-gastaldi.jpg" alt="Sito web maturità 2022" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                Per il progetto di Maturità 2022, ho realizzato una pagina web responsive
+                                (<a href="https://capurroalessandro.altervista.org/" class="text-link">che puoi visitare cliccando qui</a>), 
+                                utilizzando il framework Bootstrap, dedicata al mondo della musica, con un focus particolare sui 
+                                sintetizzatori musicali: cos'è un sintetizzatore, come funziona, la sua evoluzione storica e le 
+                                principali differenze tra le varie tipologie esistenti. All'interno della pagina è presente anche 
+                                una sezione diinamica che presenta una tabella collegata a un database MySQL, contenente una 
+                                raccolta di sintetizzatori.
+                            </p>
+                            <p>
+                                L’accesso alla gestione della tabella è riservato agli amministratori: tramite una schermata di login 
+                                è possibile autenticarsi e successivamente modificare, eliminare o aggiungere nuovi sintetizzatori 
+                                all'elenco. Questo progetto mi ha permesso di integrare competenze di sviluppo front-end, gestione 
+                                database e autenticazione utente.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS, JavaScript, JQuery, Bootstrap 4, PHP, MySQL.
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/SitoWebMaturita" class="text-link">
+                                    Sito web maturità
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="exp" aria-labelledby="exp-title">
+            <div class="exp-cards">
+                <div class="exp-header">
+                    <h2 class="exp-title">
+                        IIS Italo Calvino - (<span class="accent-teal">2018/2019/2020</span>):
+                    </h2>
+                </div>
+                <section class="container exp-card-inner">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Space Invaders - (2020):
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/space-invaders.jpg" alt="Space Invaders" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                In questo progetto mi sono dedicato allo sviluppo di un clone di Space Invaders, realizzando 
+                                la grafica tramite la libreria Canvas e gestendo la logica di gioco con JavaScript e jQuery. 
+                                Purtroppo, il progetto è rimasto incompleto a causa della pandemia di COVID-19 e di un successivo 
+                                cambio di programma da parte della docente. Nonostante ciò, il lavoro svolto rappresenta un'esperienza 
+                                importante nella gestione della grafica dinamica e delle meccaniche di gioco.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS, JavaScript, JQuery, Canvas (HTML5).
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/SpaceInvadersClone" class="text-link">
+                                    Space Invaders
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="container exp-card-inner">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Inserimento dati - (2019):
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/inserimento-dati.jpg" alt="Inserimento dati" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                In questo progetto ho realizzato, utilizzando JavaScript, un array indicizzato che permette 
+                                di inserire diversi parametri (nome, cognome, età e lavoro), e di gestirne la visualizzazione
+                                in modo dinamico. Gli utenti possono esplorare l'intero contenuto dell'array spostandosi 
+                                direttamente all'inizio o alla fine, oppure visualizzare un parametro alla volta cliccando 
+                                sulle frecce presenti nell'interfaccia grafica. I dati vengono mostrati in una textarea 
+                                seguendo un ordine preciso: nome, cognome, età e infine lavoro.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS, JavaScript.
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/InserimentoDati" class="text-link">
+                                    Inserimento dati
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="container exp-card-inner">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Gioco dell'impiccato - (2019):
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/gioco-impiccato.jpg" alt="Gioco dell'impiccato" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                In questo progetto ho sviluppato il gioco dell’impiccato utilizzando JavaScript e jQuery. 
+                                Il giocatore può avviare una nuova partita cliccando sull'apposito pulsante e inserire una 
+                                parola a sua scelta. Si hanno a disposizione 8 tentativi per indovinare la parola: a ogni 
+                                errore, viene disegnato progressivamente l'omino impiccato, frame dopo frame. Se i tentativi 
+                                terminano senza trovare la parola, la partita si conclude; in caso di vittoria, comparirà a 
+                                schermo il messaggio "Hai vinto".
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS, JavaScript, JQuery.
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/GiocoImpiccato" class="text-link">
+                                    Gioco dell'impiccato
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="container exp-card-inner">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Tris - (2019):
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/tris-jquery.jpg" alt="Tris" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                In questo progetto ho ricreato il classico gioco del tris utilizzando JavaScript e jQuery, 
+                                integrandolo all'interno di una pagina HTML. L'obiettivo era offrire un'esperienza di gioco 
+                                semplice e intuitiva, curando sia la logica di funzionamento che l'interattività dell'interfaccia.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS, JavaScript, JQuery.
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/Tris-JQuery" class="text-link">
+                                    Tris
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="container exp-card-inner">
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3 class="exp-title">
+                                Template responsive - (2018):
+                            </h3>
+                        </div>
+                        <picture class="exp-card-media">
+                            <img src="../assets/images/template-css.jpg" alt="Template responsive" loading="lazy"
+                                decoding="async">
+                        </picture>
+                        <div class="exp-text">
+                            <p>
+                                L'obiettivo di questo progetto era sviluppare un template di pagina web completamente 
+                                responsive, ispirato al layout proposto da W3Schools. Partendo da questa base, ho 
+                                personalizzato l'aspetto grafico intervenendo sulle classi CSS, adattandolo al mio stile 
+                                e alle mie esigenze creative.
+                            </p>
+                            <p>
+                                Linguaggi utilizzati: HTML5, CSS
+                            </p>
+                            <p>
+                                Repository Github:
+                                <a href="https://github.com/capurrooalessandro/TemplateResponsiveHTML5" class="text-link">
+                                    Template
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container cta-inner">
+                <div class="cta-copy">
+                    <h2 id="cta-title" class="cta-title">Collaboriamo?</h2>
+                    <p class="cta-text">
+                        Contattami o seguimi sui miei canali per rimanere in contatto:
+                    </p>
+                </div>
+                <nav class="social cta-actions">
+                    <ul class="social-list">
+                        <li>
+                            <a class="btn btn--icon" href="mailto:alessandro.capurro.iic@gmail.com" aria-label="Email">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn--icon" href="https://www.linkedin.com/in/alessandro-capurro-abbb10340/" target="_blank" rel="noopener"
+                                aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn--icon" href="https://www.instagram.com/capurroo.alessandro/" target="_blank" rel="noopener"
+                                aria-label="Instagram">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn--icon" href="https://github.com/capurrooalessandro" target="_blank" rel="noopener"
+                                aria-label="GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-inner">
+            <nav class="footer-nav" aria-label="Footer">
+                <ul class="nav-list footer-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Educazione.html">Educazione</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./competenze.html">Competenze</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./esperienze.html" aria-current="page">Esperienze</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <p class="legal">
+                Copyright &copy; 
+                <time datetime="2025">2025</time> 
+                Capurro Alessandro. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
